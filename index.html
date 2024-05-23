@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="relative grid place-items-center">
+            <img src="./images/cajas-duplicado.jpg" class="h-full md:h-597 w-full" alt="cajas_portada">
+            <div class="absolute">
+                <h1 class="text-[#021d34] font-thin text-center text-2xl mb-5 md:text-7xl md:[text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] md:mb-20">LA BOUTIQUE<br> Del Embalaje</h1>
+            </div>
+        </div>
+        <section class="m-10">
+            <div class="flex justify-center items-center gap-40">
+                <div class="envios flex justify-center box-border rounded h-20 w-56 p-2 gap-2 items-center text-gray-700 bg-gray-300">
+                    <span class="material-symbols-outlined text-4xl"> local_shipping </span>
+                    <p>Envios a domicilio</p>
+                </div>
+                <div class="envios flex justify-center box-border rounded h-20 w-56 p-2 gap-2 items-center text-gray-700 bg-gray-300">
+                    <span class="material-symbols-outlined text-4xl"> shopping_cart </span>
+                    <p class="text-center">Venta por Menor y por Mayor</p>
+                </div>
+                <span class="w-60"><img src="./images/mercado-pago-logo-vector-2023.png" alt="mercado_pago"></span>
+                <span class="w-60"><img src="./images/tarjetas.png" alt="tarjetas"></span>
+
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white text-center py-2 w-full bottom-0">
+        <p> &copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

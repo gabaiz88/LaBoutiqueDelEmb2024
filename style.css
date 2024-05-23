@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: "Alfa Slab One";
+    line-height: 1.6;
+    background: #fff;
+    color: #333;
+}
+
+/* Estilos del contenido principal */
+main {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del encabezado */
+header {
+    background: #F4F4F4;
+    padding: 20px 100px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-width: 180px;
+}
+
+/* Estilos de navegación */
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+nav ul li a {
+    color: #171C61;
+    text-decoration: none;
+    padding: 5px 2px;
+    transition: 0.5s;
+    font-size: 18px;
+    font-weight:lighter;
+}
+
+nav ul li a::before {
+    border-bottom: solid 2.5px #22c4b7; 
+    transform: scaleX(0);  
+  }
+
+nav ul:hover li a {
+    transform: scale(1.5);
+    opacity: 0.2;
+    filter: blur(5px);
+}
+
+nav ul li a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+    text-decoration: none;
+}
+
+nav ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+
+nav ul li a:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
